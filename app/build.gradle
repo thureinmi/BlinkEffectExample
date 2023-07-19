@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
 }
 
 android {
@@ -46,21 +45,21 @@ android {
         }
     }
 }
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId 'com.github.thureinmi'
-            artifactId 'BlinkEffectExample'
-            version '1.0'
-            artifact(file('build/outputs/aar/BlinkLibrary-debug.aar'))
-        }
-    }
-    repositories {
-        maven {
-            url 'https://jitpack.io'
-        }
-    }
-}
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId 'com.github.thureinmi'
+//            artifactId 'BlinkEffectExample'
+//            version '1.0'
+//            artifact(file('build/outputs/aar/BlinkLibrary-debug.aar'))
+//        }
+//    }
+//    repositories {
+//        maven {
+//            url 'https://jitpack.io'
+//        }
+//    }
+//}
 
 dependencies {
 
