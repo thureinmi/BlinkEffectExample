@@ -50,7 +50,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId 'com.github.thureinmi'
-            artifactId 'blibk-library'
+            artifactId 'BlinkEffectExample'
             version '1.0'
             artifact(file('build/outputs/aar/BlinkLibrary-debug.aar'))
         }
